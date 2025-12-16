@@ -1,0 +1,13 @@
+let number="sai";
+let int=Number(number);
+console.log(int);
+//console.log(typeof int); 
+
+/* let loggedIn=null;
+let numberIstrue=Boolean(loggedIn);
+console.log(numberIstrue);
+console.log(typeof numberIstrue);
+
+ Conversion operations in JavaScript:
+ check the conversion by changing number="sai" variable to different values */
+ 
