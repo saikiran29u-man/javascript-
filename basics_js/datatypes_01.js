@@ -20,3 +20,9 @@
   let name="saikiran";
   console.log(typeof age);
   
+
+  // BigInt datatype example
+  let value = 4577565n
+  console.log(value)
+  console.log(typeof value);
+
