@@ -23,3 +23,37 @@ let myFun=function(a=10,b=20){
     return a+b;
     // console.log(myFun);
 } */
+
+// Stack and Heap memory in js:
+ // stack memory stores symbol,number,boolean,undefines,null,bigint,string.
+
+ let myFullname="upparipallisaikiran";
+ let storeName=myFullname;
+
+ let storName="saikiran";
+
+ console.log(storName);  //-->when you give the same variables but different values to each one then,
+ console.log(storeName); //-->stack memory always copy the original value and give as an output.
+
+ /* As we look at the above example, myFullname variable value is copied to storeName variable.
+ So when we change the value of storName variable it will not affect the value of storeName variable.*/
+
+
+ //Heap memor stores arrays,objects,functions.
+  /* The name of object is stored in stack memory and the info inside the object is stored in heap memory.
+  When you change the value of object,it will effect the original obj value. */
+
+  let myObjone ={
+      name:"youtube",
+      duration:13,
+  }
+    let myObjtwo=myObjone;
+    myObjone.duration=33;
+
+    console.log(myObjone);
+    console.log(myObjtwo);
+    /* As we see in the above example, when we change the value of myObjone object,it also affect the value of myObjtwo object.
+    Because both the objects are pointing to the same location in heap memory. */
+
+    
+    
