@@ -1,3 +1,5 @@
+/*----------------------NOTE: Object.method() → Static method (static method belong to the object itself),
+----------------------------- Variable.method() → Instance method (instance method belong to the created variable)------------------fun which are mentioned in this file are called as method */
 
 let todayDate = new Date() //--> date is an object,it has many functions inside of it.
 console.log(todayDate)

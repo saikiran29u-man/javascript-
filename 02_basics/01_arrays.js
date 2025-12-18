@@ -1,23 +1,24 @@
-
+/*----------------------NOTE: Object.method() → Static method (static method belong to the object itself),
+----------------------------- Variable.method() → Instance method (instance method belong to the created variable)------------------fun which are mentioned in this file are called as method */
 const myArray = [4,8,9,2,3]
 //console.log(myArray)
 
 //const matrix = new Array(6,8,4,5,1) //--> new Array() syntax is usefull in creating an empty array.
 //console.log(matrix)
   
-myArray.push(1) //--> push() fun in array is used in adding new elements in an array.
+myArray.push(1) //--> push() method in array is used in adding new elements in an array.
 
 //console.log(myArray)
 
-//myArray.pop() //--> pop() fun is used in deleting an elements.
+//myArray.pop() //--> pop() method is used in deleting an elements.
 
 //console.log(myArray)
 
-myArray.unshift(1) //--> unshift() fun used in adding new elements from index 0,this will change the index sequence of every elements in an array.
+myArray.unshift(1) //--> unshift() method used in adding new elements from index 0,this will change the index sequence of every elements in an array.
 //console.log(myArray)
 
 myArray.shift(1)
-//console.log(myArray) //--> shift() fun is usefulll in deletion of elements which is index 0.
+//console.log(myArray) //--> shift() method is usefulll in deletion of elements which is index 0.
 
 //console.log(myArray.includes(1)) //--> includes() fun checks wheather elemnt is present or not.
 
@@ -25,7 +26,7 @@ myArray.shift(1)
 
 
 let myArrTwo =  myArray.join() //--> join() fun used to bind an array and also converts an array to string.
-//console.log(myArrTwo)
+console.log(myArrTwo)
 
 //console.log(typeof myArrTwo)
 

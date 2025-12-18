@@ -1,3 +1,4 @@
+
 // Always compare same datatype values to avoid unexpected results 
 // === operator checks for both value and type equality 
    let num1=44;
