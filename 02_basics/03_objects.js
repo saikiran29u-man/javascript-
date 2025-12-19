@@ -1,3 +1,4 @@
+ //--> OBJECTS LITERALS----------------------
  
  let mySymbol = Symbol("sai")
  const myObj = {
