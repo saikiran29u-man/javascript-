@@ -9,11 +9,6 @@ portFolio.name = "sai"
 portFolio.id = "88jui"
 console.log(portFolio)
 
-
-
-
-
-
  let userDetails = {
     login:{
         fullname:{

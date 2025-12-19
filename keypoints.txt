@@ -1,0 +1,9 @@
+LITERALS,CONSTRUCTORS IN OBJECT
+
+> literals are used to create an object directly(e.g:const obj = {};)
+
+> constructors are Used to create many objects.
+(e.g: function User(name) {
+  this.name = name;
+}
+)
