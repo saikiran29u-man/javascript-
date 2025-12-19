@@ -7,3 +7,11 @@ LITERALS,CONSTRUCTORS IN OBJECT
   this.name = name;
 }
 )
+--------------------------------------------------------------------------------
+> Random user generator website provides JSON data.
+  Link:https://randomuser.me/
+
+> JSON formatter website converts the JSON data into human understandable format.
+ Link:https://codebeautify.org/jsonviewer
+ 
+ > IN JSON dataset the variables presents in string datatype.

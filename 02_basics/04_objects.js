@@ -7,7 +7,7 @@ const portFolio2 = new Object()
 
 portFolio.name = "sai"
 portFolio.id = "88jui"
-console.log(portFolio)
+//console.log(portFolio)
 
  let userDetails = {
     login:{
@@ -28,16 +28,42 @@ console.log(portFolio)
 let assignMethod3 = {...assignMethod,...assignMethod2} //--> we use spread operator to combine/add one or more objects in single object.
 //console.log(assignMethod3)
 
-console.log(Object.keys(userDetails)) //--> Object.keys() method is used to access the sub objects/values.
+//console.log(Object.keys(userDetails)) //--> Object.keys() method is used to access the sub objects/values.
 
-console.log(Object.values(userDetails)) //--> object.values() method is used to access the values of an object.
+//onsole.log(Object.values(userDetails)) //--> object.values() method is used to access the values of an object.
 
-console.log(Object.keys(portFolio)) 
-console.log(Object.values(portFolio))
+//console.log(Object.keys(portFolio)) 
+//console.log(Object.values(portFolio))
 
-console.log(Object.entries(portFolio)) //--> Object.entries() method is used to represent each variable and its value in a seperate array.
+//console.log(Object.entries(portFolio)) //--> Object.entries() method is used to represent each variable and its value in a seperate array.
 
-console.log(portFolio.hasOwnProperty("name")) //--> hasOwnProperty() is used to check wheather variable is present or not.
+//console.log(portFolio.hasOwnProperty("name")) //--> hasOwnProperty() is used to check wheather variable is present or not.
 //----------NOTE: OBJECT WILL NOT HAVE includes() FUNCTION.
 //----------------OBJECT WILL HAVE ONLY hasOwnProperty() FUNCTION.------------------------------------------
+
+
+
+//----------------------DE-STRUCTURING IN OBJECTS--------------------------------------------
+
+
+const userInfo = {
+    username:"saikiran",
+    email:"sai@gmail.com",
+    loginPassword: 5569
+}
+//---------------NOTE: IN DESTRUCTURING,takes email out of the object & Stores it in a separate variable.
+/*                     👉 Here, email is the variable.
+----------------------- -> JavaScript looks for the email property in userInfo
+----------------------- - > It creates a variable named email
+------------------------ - > The value "sai@gmail.com" is stored in that variable. */
+const {email,loginPassword:password} = userInfo //--> we can also change variable name(e.g:loginpassword to password).
+console.log(email,password)  
+//console.log(userInfo)
+
+
+
+ 
+
+
+
 
