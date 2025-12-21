@@ -1,0 +1,67 @@
+--------------------------------------- JAVASCRIPT EXECUTION CONTEXT(JEC) ----------------------------------------------
+
+Generally js exectuion context involves few steps for executing a js file.
+1.Global Execution Context (GEC).
+2.Meomory execution phase.
+3.code exectuion phase.
+
+1.GEC: 
+> The Global Execution Context (GEC) is the default environment where JavaScript code runs.
+> GEC has a global object (browser or Node.js). The this keyword refers to an object.
+> this refers to one specific object, depending on the environment and context.
+
+2.Memory execution phase:
+> In the memory creation (execution) phase:
+> Variables are set to undefined
+> Functions are stored with their entire function definition
+> Objects assigned to variables are undefined at first,Nothing is executed yet.
+
+3.code exectuion phase:
+> Code runs line by line.
+> Variables get their actual values
+> Objects are created and assigned
+> Functions are executed when called
+> New execution contexts are created for function calls.--> this means, when function gets called.. Again memory execution & code execution phases 
+will be done to the each function.
+>After the function finishes, its execution context is removed from the call stack.
+check out:img in file explorer (c:\Users\Uppar\Dropbox\Screenshots\Screenshot 2025-12-21 12.54.13.png).
+-------------------------EX FOR JS EXECUTION CONTEXT--------------------------------------
+let val1 = 10
+let val2 = 5
+
+function addnumbers(num1,num2){
+    total num1 + num2
+    return total
+}
+
+let result1 = addnumbers(val1,val2)
+let result2 = addnumbers(10,8)
+-------------------------------------------------------------------------------------------
+---------------------------CALL STACK------------------------------------------------------
+> call stack works using LIFO(last in one out) method, it generally pop the top element from the stack or memory once its execution is
+completed.
+EXAMPLE:
+        function first() {
+  second();
+}
+
+function second() {
+  console.log("Hello");
+}
+
+first();
+
+steps of call stack working:
+
+1.Global Execution Context is pushed to the call stack.--> this line means, The call stack begins with the Global Execution Context,
+ and everything else runs on top of it.
+
+2.first() is called → its execution context is pushed.
+
+3.Inside first(), second() is called → its context is pushed.
+
+4.second() runs and finishes → popped from stack.
+
+5.first() finishes → popped.
+
+6.At last only Global Context remains.
