@@ -15,3 +15,8 @@ LITERALS,CONSTRUCTORS IN OBJECT
  Link:https://codebeautify.org/jsonviewer
  
  > IN JSON dataset the variables presents in string datatype.
+ ------------------------------------------------------------------------------
+ VS CODE SHORTCUTS:
+ swift + alt + downarrow to copy text.
+ ctrl + ` to open terminal.
+ ctrl + L to ger into new line in terminal
