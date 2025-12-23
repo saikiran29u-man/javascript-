@@ -20,3 +20,5 @@ LITERALS,CONSTRUCTORS IN OBJECT
  swift + alt + downarrow to copy text.
  ctrl + ` to open terminal.
  ctrl + L to ger into new line in terminal
+ ctrl + swift + L to comment multiple lines at a time.
+ ctrl + D to delete same named variable at a time.
