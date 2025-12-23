@@ -22,3 +22,8 @@ LITERALS,CONSTRUCTORS IN OBJECT
  ctrl + L to ger into new line in terminal
  ctrl + swift + L to comment multiple lines at a time.
  ctrl + D to delete same named variable at a time.
+
+ ------------------------------------------------------------------------------
+ iterations:"Each run of the loop is an iteration".
+ forof loop is used in map iteration.
+ forin loop is used in object iteration.
