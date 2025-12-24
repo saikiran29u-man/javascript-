@@ -1,3 +1,5 @@
+BRENDEN EICH IS THE FOUNDER OF JS.
+-------------------------------------------------------------------------------
 LITERALS,CONSTRUCTORS IN OBJECT
 
 > literals are used to create an object directly(e.g:const obj = {};)
@@ -27,3 +29,8 @@ LITERALS,CONSTRUCTORS IN OBJECT
  iterations:"Each run of the loop is an iteration".
  forof loop is used in map iteration.
  forin loop is used in object iteration.
+ ------------------------------------------------------------------------------
+editor: https://excalidraw.com/
+> Html collections,array collections,object collections, are different from each other.
+(e.g: enter console.log(document.links))
+> 
