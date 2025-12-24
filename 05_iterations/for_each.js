@@ -50,4 +50,11 @@ const searchObject = [
 searchObject.forEach((thing)=>{
     console.log(thing.userName )
 })
+
+
+//-------------finding the object values using filter method------------------------------
+const findObject = searchObject.filter((name)=>{
+    return name.userName ==="karthik" && name.password === 8873
+})
+console.log(findObject)
 // --------------------------------------
