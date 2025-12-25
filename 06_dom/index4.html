@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<body style="background-color: black; color:white">
+     <ul class="language">
+        <li>javascript</li>
+     </ul>
+</body>
+<script>
+//passing new li using normal function. 
+function addlanguage(addinglang){
+    const li = document.createElement('li')
+    li.innerHTML = `${addinglang}`
+    document.querySelector('.language').appendChild(li)
+}
+addlanguage("ruby")
+
+//passing new li using createTextContent method along with function. 
+function addinglang(lang){
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(lang))
+    document.querySelector('.language').appendChild(li)
+}
+addinglang("scripting language")
+/* steps: 1. write a function and pass a parameter inside of it.
+          2. create an element (e.g: <li></li>) and hold using const.
+          3.add parameter to the element(const li).
+          4. add text inside element(e.g:const li) using "createTextNode" 
+          method of DOM which stores inside of parameter.
+          5. select the element inside html using querySelector and add 
+          an element.(e.g: const li)
+*/
+
+const replacelang = document.querySelector('li:nth-child(2)')
+console.log(replacelang)
+const newli = document.createElement('li')
+newli.textContent = "go"
+replacelang.replaceWith(newli)
+// replaceWith method is used to replace old elements with new elements.
+// nth-child selector is used to access a particular element.
+
+
+/* const replacelang2 = document.querySelector('li:nth-child(1)')
+console.log(replacelang2)
+const newli2 = document.createElement('li')
+newli2.textContent = "python"
+replacelang2.replaceWith(newli2) */
+
+const replacelang2 = document.querySelector('li:nth-child(1)')
+replacelang2.outerHTML = "<li>python</li>"
+// The outerHTML property is used to get or replace an element along with its HTML tag and content.
+
+const removeReplacelang = document.querySelector('li:nth-child(2)')
+removeReplacelang.remove()
+// The remove() method is a DOM method used to delete an element from the webpage. 
+
+</script>
+</html>
+
+<!-- NOTE: In index3.html file, we create an elements in console and push to the html where as 
+ in index4.html we created an elements in js and added inside of html -->
