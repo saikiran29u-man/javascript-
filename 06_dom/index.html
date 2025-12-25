@@ -1,0 +1,95 @@
+ <!-- DOM-DOCUMENT OBJECT MODEL 
+ Def: DOM (Document Object Model) is a programming interface that represents an HTML document as a tree of objects, 
+ allowing JavaScript to access, modify, add, or remove elements and content on a web page. 
+ version 1:**DOM (Document Object Model)** is a way for JavaScript to **see and change the HTML elements of a web page**.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <style>
+        .bg-color{
+            background-color: black;
+            color:white
+        }
+    </style>
+</head>
+<body class="bg-color">
+    <div>
+         <h1 id="title" class="heading">learning DOM
+            <span 
+            style="color:green">document object model</span>
+         </h1>
+         <h2>Lorem ipsum dolor sit.</h2>
+         <h2>Lorem ipsum dolor sit.</h2>
+         <ul>
+            <ol>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ol>
+         </ul>
+        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+         
+    </div>
+</body>
+</html>
+
+<!-- 
+ In DOM we understand, how to select different in webpage & use selectors to make changes.
+ NOTE: PARAMETER SHOULD MUST BE PASSING INSIDE FUNCTION.
+ > getElementById() method is used to access the elements with id selector.(e.g:getElementById('title'))
+ > getElementByClassName() method is used to access the elements with class selector.
+ > getAttribute() method is used to access the elements using attribute selector.
+ > setAttribute() method is used to change the elements using attribute selector.
+ > using styling elements we can style the elements in the webpage.(e.g:title.style.backgroundColor ='red')
+ > innerText property is used in showing text inside of an element.
+ > innerContent property is used in showing invisible text inside of an element.
+ > innerHTML property is used in showing text along with html tag inside of an element.
+ > querySelector() method is used to access the first element in the html file using css selector.
+ > querySelectorAll() method is used to access all elements inside of list in the html file using css selector.
+ > Array.from() method is used to convert html collection to array collection.
+
+//---------------changing webpage using DOM-------------------------
+
+step 1: document.querySelectorAll('h3')
+NodeList(26) [h3#Early_years, h3#Growth, h3#Initial_public_offering, h3#2012_onwards, h3#Search_engine, h3#Advertising, h3#Generative_artificial_intelligence, h3#Consumer_services, h3#Enterprise_services, h3#Internet_services, h3#Financial_services, h3#Business_trends, h3#Tax_avoidance_strategies, h3#Corporate_identity, h3#Workplace_culture, h3#Office_locations, h3#Infrastructure, h3#Environment, h3#Philanthropy, h3#Lobbying_and_political_influence, h3#Political_controversies, h3#Antitrust, h3#Gender_discrimination_lawsuit, h3#Censorship, h3#Data_loss, h3#Data_privacy]0: h3#Early_years1: h3#Growth2: h3#Initial_public_offering3: h3#2012_onwards4: h3#Search_engine5: h3#Advertising6: h3#Generative_artificial_intelligence7: h3#Consumer_services8: h3#Enterprise_services9: h3#Internet_services10: h3#Financial_services11: h3#Business_trends12: h3#Tax_avoidance_strategies13: h3#Corporate_identity14: h3#Workplace_culture15: h3#Office_locations16: h3#Infrastructure17: h3#Environment18: h3#Philanthropy19: h3#Lobbying_and_political_influence20: h3#Political_controversies21: h3#Antitrust22: h3#Gender_discrimination_lawsuit23: h3#Censorship24: h3#Data_loss25: h3#Data_privacylength: 26[[Prototype]]: NodeList
+
+step 2: const h3 = document.querySelectorAll('h3')
+undefined
+
+step 3: h3
+NodeList(26) [h3#Early_years, h3#Growth, h3#Initial_public_offering, h3#2012_onwards, h3#Search_engine, h3#Advertising, h3#Generative_artificial_intelligence, h3#Consumer_services, h3#Enterprise_services, h3#Internet_services, h3#Financial_services, h3#Business_trends, h3#Tax_avoidance_strategies, h3#Corporate_identity, h3#Workplace_culture, h3#Office_locations, h3#Infrastructure, h3#Environment, h3#Philanthropy, h3#Lobbying_and_political_influence, h3#Political_controversies, h3#Antitrust, h3#Gender_discrimination_lawsuit, h3#Censorship, h3#Data_loss, h3#Data_privacy]
+
+step 4:h3.forEach(function (h3) {
+    h3.style.color ='white';
+    h3.style.backgroundColor= 'orange';
+    h3.style.padding = '5px';
+    h3.style.borderRadius = '10px';
+})
+undefined
+
+//-------------Converting NODELIST TO ARRAY--------------
+
+step 1: const List = document.querySelectorAll('li')
+undefined
+
+step 2: List
+NodeList(3) [li, li, li]
+
+step 3: const arr2 = Array.from(List)
+undefined
+
+step 4: arr2
+(3) [li, li, li]
+
+step 5: arr2.forEach(function (li) {
+    return console.log(li)
+})
+VM18932:2 <li>​…​</li>​
+VM18932:2 <li>​…​</li>​
+VM18932:2 <li>​…​</li>​
+undefined
+ -->
