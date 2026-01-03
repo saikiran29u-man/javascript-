@@ -1,0 +1,57 @@
+Define thread?
+A thread is a worker inside a program that performs a specific sequence of tasks.
+e.g: 
+In a program that adds two numbers:
+A thread takes the input values,
+Performs the addition,
+Produces the output.
+
+All these steps are executed by the same thread in order.
+
+--------------------------------------------------------
+
+> JavaScript follows a single-threaded, synchronous execution model, which means new task only starts when previous one 
+  gets completed.
+
+> Asynchronous code: Asynchronous code is code that allows a program to start a task and continue executing other code 
+  without waiting for that task to finish
+
+> Blocking-code: is code that stops the execution of other code until it finishes its task.
+  e.g:
+    console.log("Start");
+
+    for (let i = 0; i < 1e9; i++) {} // slow task
+
+    console.log("End");
+
+> Non-Blocking code: is code that does not stop the execution of other code and allows JavaScript to continue running.
+  e.g: 
+    console.log("Start");
+
+    setTimeout(() => {
+    console.log("Task done");
+    }, 1000);
+
+    console.log("End");
+
+> webAPI: Web APIs are browser-provided tools that JavaScript uses to handle tasks like timers,DOM manipulation.
+  ***A Web API is one type of API among many available APIs.***
+
+  WHAT DOES WEBAPI DO?
+  Web APIs take work off JavaScript’s hands, do it in the background, and notify JavaScript when it’s done.**
+  
+  NodeAPI: are APIs provided specifically for the Node.js runtime environment.
+
+  WORKING OF Asynchronous CODE:
+
+  callstack -> webAPI -> queues (task queue,microtask queue) -> eventloop
+
+  *** All JavaScript execution happens in the Call Stack, but asynchronous tasks are handled outside it and later come back to it.***
+
+  JavaScript starts by creating the Global Execution Context, which goes through a memory creation phase and a code execution phase. 
+  The call stack executes synchronous code one step at a time. When JavaScript encounters asynchronous code,
+  it sends it to Web APIs and continues executing synchronous code. After Web APIs complete their work,
+  callbacks are placed into either the microtask queue or the task queue.
+  The event loop monitors the call stack and, when it is empty,
+  moves microtasks first and then tasks into the call stack for execution.
+  Objects and data are stored in the memory heap during execution.
