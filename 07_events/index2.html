@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        .sbt{
+            background-color: orange;
+            color:black;
+            font-family: sans-serif;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body style="background-color: white ;">
+    <h1 id="heading"> Hey..!</h1>
+    <h2 id="headingTwo"> chai aur code</h2>
+    <button class="sbt">submit</button>
+    
+</body>
+<script>
+/* NOTE: setTimeout() is a JavaScript function that executes 
+a piece of code once after a specified delay (in milliseconds).*/
+
+//timeout function():
+   const heading = document.querySelector('#heading')
+   const second = setTimeout(()=>{
+        heading.innerHTML = 'how are you?'
+    },2000)
+/* NOTE: We store the timeout in a variable so that we can later reference and cancel
+ that specific timer using clearTimeout(). */
+    document.querySelector('.sbt').
+    addEventListener('click',function(){
+        clearTimeout(second)
+        console.log('timeOut got stopped..!')
+    })
+// -------------------------------------------------------------------------------------
+  //setinterval function:
+const timeInterval = function(){
+    const headingTwo = document.querySelector('#headingTwo')
+    headingTwo.innerText = 'chalo chale..'
+    console.log(headingTwo)
+} 
+/* we can hold the DOM element inside/outside of function but we need to pass the function 
+inside of timeOut/setInterval function that is the reason we hold the function in variable. */
+
+// NOTE: headingTwo is the var which is holding the callback function of setInterval().
+  const secondTwo = setInterval(timeInterval,3000)
+
+  document.querySelector('.sbt').addEventListener('click',()=>{
+    clearInterval(secondTwo)
+    console.log('timeInterval got stopped..!')
+  })
+
+
+  
+
+//  const timeInterval = setInterval(headingTwo,1000)
+
+     
+</script>
+</html>
+
+<!-- ** dump code ***
+document.querySelector('.sbt').addEventListener('click').addEventListener('click',function(){
+        clearTimeout(heading)
+        console.log('timer got stopped')
+    })
+
+const button = document.querySelector('.sbt').
+    addEventListener('click',function(){
+        clearTimeout(heading)
+        console.log('timer stopped')
+    })
+-->

@@ -37,7 +37,7 @@ function priceCart(...itemsValues){ //--> ... rest operator is used to print unl
 
 }
 
-//console.log(priceCart(400,78,234))
+console.log(priceCart(400,78,234))
 
 //----------PASSING OBJECT INTO FUNCTION--------------------------
 

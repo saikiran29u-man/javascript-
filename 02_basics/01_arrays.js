@@ -18,9 +18,9 @@ myArray.unshift(1) //--> unshift() method used in adding new elements from index
 //console.log(myArray)
 
 myArray.shift(1)
-//console.log(myArray) //--> shift() method is usefulll in deletion of elements which is index 0.
+//console.log(myArray) //--> shift() method is usefull in deletion of elements which is index 0.
 
-//console.log(myArray.includes(1)) //--> includes() fun checks wheather elemnt is present or not.
+//console.log(myArray.includes(1)) //--> includes() fun checks wheather element is present or not.
 
 //console.log(myArray.indexOf(3)) //--> indexOf() fun shows the index number of the given element.
 
@@ -35,7 +35,7 @@ console.log("A ",myArray)
 let mynewArr = myArray.slice(0,3) //--> slice() fun extracts elements without changing the original array.
 console.log(mynewArr)
 console.log("B",myArray)
-// NOTE:splice() gives a new array of removed elements,where slicce() gives a new array of copied elements (nothing is removed).
+// NOTE:splice() gives a new array of removed elements,where slice() gives a new array of copied elements (nothing is removed).
 let mynewArr2 = myArray.splice(0,3) //--> splice() fun extracts elements by changing orignal array.
 console.log("C",myArray)
 

@@ -43,9 +43,18 @@ if(email && password){
 let username = null
 let displayname = username ?? undefined ?? "upparipalli"
 console.log(displayname)
+ 
+let numOne = 123
+console.log(typeof numOne)
+const changeMe = numOne ?? number ?? "im a number"
+console.log(changeMe)
+// NOTE: Nullish operator will only look after null or undefined.it doesnt care about what input is given.
 
 //--------IMP:ternary operator-------------------
 // Syntax: condition ? true : false
 
 let age = 22
 age > 20 ? console.log("Adult") : console.log("teenager")
+
+let num = Number(12)
+isNaN(num) ? console.log("give a number"): console.log("it is number")

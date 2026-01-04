@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+<body>
+    <h1 id="heading">javascript</h1>
+    <button id="sbt1">start</button>
+    <button id="sbt2">stop</button>
+</body>
+<script>
+
+const button = document.querySelector('#sbt1')
+const buttonTwo = document.querySelector('#sbt2')
+
+let interval;
+
+button.addEventListener('click',function(){
+     interval = setTimeout(function(){
+        document.querySelector('#heading').innerHTML = 'Node.js'
+
+     },3000)
+    
+}) 
+ 
+buttonTwo.addEventListener('click',function(){  
+       clearTimeout(interval)
+       console.log('timeOut stopped')
+     
+}) 
+/* WORKING OF BUTTONS BTS:
+interval stores the ID(i.e: a reference number, not time) returned by setTimeout().
+If clearTimeout(interval) is executed before the delay completes,
+the browser cancels the timer and the callback is removed from Web APIs,
+so it never enters the callback queue or call stack.
+
+WHEN TIMER BEHAVES NORMALLY:
+
+Click button                                            
+   ↓
+setTimeout()
+   ↓
+Web APIs (3 sec timer)
+   ↓
+Callback Queue
+   ↓
+Event Loop
+   ↓
+Call Stack
+   ↓
+DOM changes
+
+WHEN TIMER STOPPED:
+
+click start
+ ↓
+Web APIs (timer running)
+   ↓
+Click stop
+   ↓
+Timer cancelled ❌
+
+*/
+
+</script>
+</html>
+
+<!-- document.querySelector('sbt2').addEventListener('click',function(){
+        clearInterval(interval)
+         
+    }) -->

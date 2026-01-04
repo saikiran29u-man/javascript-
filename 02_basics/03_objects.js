@@ -13,10 +13,11 @@
 }
 
 console.log(myObj)
-//console.log(myObj.email)
-//console.log(myObj["email"]) //--> working example of NOTE 2.
+console.log(myObj.email)
+console.log(myObj["email"]) //--> working example of NOTE 2.
+ 
 
-//console.log(typeof(myObj.mySymbol)) //--> Symbol is consider as string in background,to change the datatype read NOTE 1.
+console.log(typeof(myObj.mySymbol)) //--> Symbol is consider as string in background,to change the datatype read NOTE 1.
 
 myObj.contact = 7732045650 //-->method used to change info of variable.
 

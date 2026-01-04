@@ -10,7 +10,7 @@
   const userName = new String('hello world') // It is the way of declaring variables in string.
   console.log(userName.toUpperCase()) 
   console.log(userName.charAt(9))
-  console.log(userName[6])  // it the property to check the key value of the char.
+  console.log(userName[6])  //  the property to check the key value of the char.
 
   console.log(userName.substring(1,7)) // The substring() method is used to extract part of a string and return it as a new string,it will not print last value.
 

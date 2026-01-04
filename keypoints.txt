@@ -33,4 +33,16 @@ LITERALS,CONSTRUCTORS IN OBJECT
 editor: https://excalidraw.com/
 > Html collections,array collections,object collections, are different from each other.
 (e.g: enter console.log(document.links))
-> 
+------------------------------------------------------------------------------
+
+1.implicit return operator: const numbers = (num1,num2)=> (9,9)
+			    console.log(numbers)
+
+2.IIFE: ((num1,num2)=>{console.log(num1+num2)}) (9,8);
+
+3.ternery operator:  
+    let num = Number("saikiran")
+    isNaN(num) ? console.log("give a number"): console.log("it is number")
+
+
+     

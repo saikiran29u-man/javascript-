@@ -54,7 +54,7 @@ if(true){
 }
 //-------------------------------------------------------------------------------
 
-//--------------DEFINING FUNCTIO METHODS----------------
+//--------------DEFINING FUNCTION METHODS----------------
 //---METHOD-1
 function definingFun(num1){
     num1 = 8

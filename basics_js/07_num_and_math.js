@@ -3,25 +3,25 @@
 
 //-------------------------------NUMBERS-------------------------------------------
 const myNum = new Number(89) //--> new is a keyword.
-//console.log(myNum);
+console.log(myNum);
 
-//console.log(myNum.toString()) //--> tostring() converts the number to obj.
-//console.log(typeof myNum)
+// console.log(myNum.toString()) //--> tostring() converts the number to obj.
+// console.log(typeof myNum)
 
 //console.log(myNum.toFixed(2)) //--> toFixed() is the function to add floating numbers.
 
 let number = 1894838494
-//console.log(number.toLocaleString('en-IN')) //--> toLocalString() function is used to represent the numbers in hundreds,thousands etc....
+// console.log(number.toLocaleString('en-IN')) //--> toLocalString() function is used to represent the numbers in hundreds,thousands etc....
     //--> (en-IN) is used to display the numbers in IND format.
 
 let number2 = 18.78
-//console.log(number2.toPrecision(3)) //--> toPrecision() function is used to get the precise value of the given input.
+// console.log(number2.toPrecision(3)) //--> toPrecision() function is used to get the precise value of the given input.
 
 
 
 //--------------------------------------MATH OBJECT--------------------------------------------------------
 
-//console.log(Math.round(445.8)) //--> round() fun gives the round value of the input.
+// console.log(Math.round(445.8)) //--> round() fun gives the round value of the input.
 
 //console.log(Math.abs(-89))  //--> abs() fun converts the negative value into positive value of the input.
 

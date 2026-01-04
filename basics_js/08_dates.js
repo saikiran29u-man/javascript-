@@ -8,13 +8,13 @@ console.log(todayDate.toLocaleString()) //--> toLocaleString will give you date,
 
 //console.log(todayDate.toLocaleDateString()) //--> toLocaleDateString will give you date,month,year.
 
-//console.log(todayDate.toString()) //-->converts the date into object .
+console.log(todayDate.toString()) //-->converts the date into object .
 
 //console.log(todayDate.getDate()) //--> getDate() fun is used to print todays date.
 
-//console.log(todayDate.getDay() + 1)
+console.log(todayDate.getDay() + 1)
 
-//console.log(todayDate.getMonth() +1)
+console.log(todayDate.getMonth() +1)
 
 //console.log(todayDate.getMilliseconds()) //--> getMilliseconds() fun is used to print seconds.
 
@@ -24,3 +24,5 @@ console.log(todayDate.toLocaleString()) //--> toLocaleString will give you date,
     weekday:'narrow'
 
 }) --> we will study in detail in coming files. */
+
+console.log(Date.now())

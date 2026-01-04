@@ -38,3 +38,7 @@ console.log(findBooks)
 
 findBooks = books.filter((book)=>book.title >= 'Book Two')
 console.log(findBooks)
+
+getbook = books.filter((item)=> item.genre === 'Fiction')
+console.log(getbook)
+

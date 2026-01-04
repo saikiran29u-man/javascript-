@@ -41,6 +41,6 @@
         console.log("Dec")
         break;
     default:
-        console.log("We have only 12 months in an year 😅")
+        console.log("We have only 12 months in a year 😅")
         break;
  }
